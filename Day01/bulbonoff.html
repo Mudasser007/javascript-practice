@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bulb On and Off Pactice</title>
-</head>
-<body>
+  </head>
+  <body>
     <h2>What can JavaScript Do?</h2>
     <p>JavaScript can change HTML attribute values.</p>
     <p>
       In This case JavaScript can change the value of the src(source) attribute
       an image.
     </p>
-    <button onclick="document.getElementById('imgId').src='./image/on.png'"
-    >Turn On the Light</button>
-    
-    <img id="imgId" src="./image/off.png" height="200" width="200"/>
-    <button onclick="document.getElementById('imgId').src='./image/off.png'"
-    >Turn off the Light</button>
-</body>
+    <button onclick="handleOffButtonClick()">Turn On the Light</button>
+    <p id="paraId"></p>
+    <img id="imgId" src="./image/off.png" height="200" width="200" />
+    <button onclick="handleOnButtonClick()">Turn off the Light</button>
+    <script>
+      function handleOnButtonClick() {
+        //block of code
+
+        document.getElementById("imgId").src = "./image/off.png";
+        document.getElementById("paraId").innerHTML = "The bulb is OFF now";
+      }
+      function handleOffButtonClick() {
+        document.getElementById("imgId").src = "./image/on.png";
+        document.getElementById("paraId").innerHTML = "The bulb is ON now";
+      }
+    </script>
+  </body>
 </html>
