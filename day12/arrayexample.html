@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Example</title>
+  </head>
+  <body>
+    <h1>Array</h1>
+    <p id="demo"></p>
+    <script>
+        // Data Type
+        // Number ,String,BigInt(2020), Null, Undefined, Object.
+        // Object, ---Object, Array(object)
+        // Object -entity-Car,Person-----Objects----Property and Methods
+      //  const person
+      //   Const firstName="Azhar"
+      //   const lastName="Sheikh"
+
+      //   console.log(person.lastname)
+
+        // const car1="Renault";
+        // const car2="Maruti";
+        // const car3="Volvo";
+        // const cars = ["Renault", "Maruti", "Volvo"];
+        // 0       1        2
+      //   // const car={}
+        const cars=[
+          {
+              name:"Volve"
+              model: 400,
+          },
+          {name:"Renault"
+          model:600},
+          {
+              name:"Maruti"
+              model:800
+
+          }
+
+        ]
+
+        document.getElementById("demo").innerHTML = ` car 1:${cars[0].name}car 1:${cars[0].model} </br>
+          car 2:${cars[1].name}car 2:${cars[1].model}</br> car3:${cars[2].name}car3:${cars[2].model}
+          `;
+    </script>
+  </body>
+</html>
