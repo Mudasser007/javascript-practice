@@ -4,18 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Logical Operators</title>
+    <title>Functional Example 1</title>
   </head>
   <body>
+    <h1>Fareinheit to Degree Celcius</h1>
     <p id="demo"></p>
     <script>
-      const x = 6;
-      const y = 3;
-      //logical OR Operator;
-      // let z = x === 5 || y===5;
-      // console.log(z);
-      let z = x > 10 && y > 1;
-      document.getElementById("demo").innerHTML=!z;
+      function tocelcius(f) {
+        return (5 / 9) * (f - 32);
+      }
+      0;
+      document.getElementById("demo").innerHTML =
+        "The tempereture is" + tocelcius(857826) + "Celcius";
     </script>
   </body>
 </html>
