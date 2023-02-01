@@ -15,15 +15,19 @@
 
     <p id="demo"></p>
     <script>
+      //   document.getElementById("demo").innerHTML = Math.ceil(4.9);
           const numbers=[ 0,150, 30, 20,-8,-200 ,[3,6,8], [3,6] ];
       //     const newFlatten=Array.prototype.concat.apply([], numbers);
       //     const newFlatten=numbers.flat(2);
       //   document.getElementById("demo").innerHTML = Array.prototype.concat.apply( [], numbers);
       // document.getElementById("demo").innerHTML=Math.min(34,56,35);
       // Math.max.apply(null, numbers);
+      // 0-10 ----round
+      // 0-9 ----floor
+      // 1-10 ---ceil
 
       const randomValue=Math.random();
-      document.getElementById("demo").innerHTML=Math.ceil(randomValue, *10);
+      document.getElementById("demo").innerHTML=Math.ceil(randomValue *10);
       
     </script>
   </body>
