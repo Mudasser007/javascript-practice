@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For-Loop Example</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      const cars = ["Maruti", "Renault", "BMW"];
+      cars.push("Tata");
+      let text = "";
+      //   text += cars(0) + "</br>";
+      //   text += cars(1) + "</br>";
+      //   text += cars(2) + "</br>";
+      //   Initialization let i=0;
+      //   condition check
+      //   execute the code
+      //   Increament
+      for (let i = 0; i < cars.length; i++) {
+        console.log("Iteration::", i, cars[i], text);
+        text += cars[i];
+      }
+
+      document.getElementById("demo").innerHTML = text;
+    </script>
+  </body>
+</html>

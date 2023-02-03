@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch Example</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      const day = new Date().getDay();
+      console.log("The Current Day is::", day);
+      //   let weekDay;
+      //   switch (day) {
+      //     case 0:
+      //       weekDay = "Sunday";
+      //       break;
+      //     case 1:
+      //       weekDay = "Monday";
+      //       break;
+      //     case 2:
+      //       weekDay = "Tuesday";
+      //       break;
+      //     case 3:
+      //       weekDay = "Wednesday";
+      //       break;
+      //     case 4:
+      //       weekDay = "Thursday";
+      //       break;
+      //     case 5:
+      //       weekDay = "Friday";
+      //       break;
+      //     case 6:
+      //       weekDay = "Saturday";
+      //       break;
+      //   }
+
+      //         }
+      // if(day===0) {
+      //     weekDay="Sunday"
+      // }else if (day===1);{
+        // weekDay
+    //   }
+      //   let text;
+      //   switch (day) {
+      //     default:
+      //         text="looking for WeekEnd";
+      //         break;
+      //     case 0:
+      //       text = "Today is Sunday";
+      //       break;
+      //     case 6:
+      //       text = "Today is Saturday";
+      //       break;
+      //   }
+      let text;
+      switch (day) {
+        case 5:
+        case 6:
+            text="It is weekend";
+            break;
+            default:
+                text="Looking forward for Weekend";
+                break;
+      }
+      document.getElementById("demo").innerHTML = text;
+    </script>
+  </body>
+</html>
