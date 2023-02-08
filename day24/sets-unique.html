@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Set Unique Array</title>
+  </head>
+  <body>
+    <h1>Sets</h1>
+    <p id="demo"></p>
+    <script>
+      const numbers = [1, 3, 1, 4, 5, 4, 7, 7];
+      const uniquenumbers = [...new Set(numbers)];
+      console.log("uniquenumbers", uniquenumbers);
+      const letters = new Set(["a", "b", "c", "a"]);
+      // unique number.foreach(value=>console.log(value));
+      letters.add("e");
+      let text = "";
+      for (const x of letters.values()) {
+        text += "";
+      }
+      document.getElementById("demo").innerHTML = text;
+    </script>
+  </body>
+</html>
