@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Error Object Example</title>
+  </head>
+  <body>
+    <h2>JavaScript Errors</h2>
+
+    <p>You cannot set the number of significant digits of a number to 500:</p>
+
+    <p id="demo">
+      <script>
+        let num = 1;
+        try {
+          num.toPrecision(500);
+        } catch (err) {
+          console.log("Error occured", err.name, err.message);
+          document.getElementById("demo").innerHTML = `Name of the Error:: ${err.name}<br>
+          message property of:: ${err.message}`;
+        }
+      </script>
+    </p>
+  </body>
+</html>
