@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Error Handling Example</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      try {
+        // Block of code is the code where
+        // devlopers thinks that there can be some error
+        console.log("This is try block");
+        var arr = [{}];
+      } catch (error) {
+        //error occured
+        console.log("Error occured", error);
+        document.getElementById("demo").innerHTML = error;
+      } finally {
+        arr = [];
+        console.log("clear variable");
+      }
+    </script>
+  </body>
+</html>
